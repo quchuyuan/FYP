@@ -1,10 +1,10 @@
 b=2;
 c=1;
-A=[0 0 1 0 0; 0 b c 0 0; 1 c 0 c 1; 0 0 c b 0; 0 0 1 0 0];
+A=[0 c 1 0 0 0; c b 0 0 0 0; 1 0 0 1 0 0; 0 0 1 0 0 1; 0 0 0 0 b c; 0 0 0 1 c 0];
 n = 1000;
 L = linspace(-1.95,1.95,n);
 for j=1:n
- [r,t]=comput(5,A,L(j));
+ [r,t]=comput(6,A,L(j));
  R(j)=r;
  T(j)=t;
 end 
@@ -33,6 +33,3 @@ subplot(3,2,5)
 plot(L,abs(R).^2+abs(T).^2,'.');
 xlabel('eigenvalue')
 ylabel('energy')
-
-
- 

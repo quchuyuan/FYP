@@ -1,6 +1,6 @@
-b=2;
-c=1;
-A=[0 0 1 0 0; 0 b c 0 0; 1 c 0 c 1; 0 0 c b 0; 0 0 1 0 0];
+b=20;
+c=15;
+A=[0 0 20 0 0; 0 b c 0 0; 20 c 0 c 20; 0 0 c b 0; 0 0 20 0 0];
 n = 1000;
 L = linspace(-1.95,1.95,n);
 for j=1:n
@@ -34,5 +34,3 @@ plot(L,abs(R).^2+abs(T).^2,'.');
 xlabel('eigenvalue')
 ylabel('energy')
 
-
- 
